@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FDA12B;
+    --primary: #d6cc9c;
     --secondary: #8D9297;
     --light: #F8F9FA;
     --dark: #182333;
@@ -66,6 +66,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Ambroise Light';
+    src: 
+         url('ambroise-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*** Navbar ***/
 .navbar.sticky-top {
@@ -94,6 +101,22 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+}
+.navbar-brand h1 {
+    font-family: 'Alegreya SC', serif;
+    font-weight: 400; /* or 700/800 depending on how bold you want it */
+    font-size: 1.3rem; /* adjust for responsiveness */
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin-left: -25px;
+}
+
+.cas h1 {
+    font-family: 'Alegreya SC', serif;
+    font-weight: 400; /* or 700/800 depending on how bold you want it */
+    font-size: 1.5rem; /* adjust for responsiveness */
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 991.98px) {
