@@ -35,63 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
-<style>
-/* Gallery Styles */
-.gallery-grid {
-    transition: all 0.4s ease;
-}
 
-.media-card {
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: #000;
-}
-
-.media-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3) !important;
-}
-
-.media-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.media-card:hover .media-overlay {
-    opacity: 1;
-}
-
-/* Filter buttons */
-.filter-controls .btn.active {
-    background: var(--bs-primary);
-    color: white;
-}
-
-/* Modal styles */
-#mediaModal .modal-content {
-    background: transparent;
-}
-
-#mediaModal .btn-close {
-    filter: brightness(0) invert(1);
-    opacity: 1;
-    font-size: 1.5rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 767.98px) {
-    .gallery-item {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-}
-</style>
 
 
 
@@ -104,8 +48,7 @@
     </div>
     <!-- Spinner End -->
 
-
-  <!-- Topbar Start -->
+<!-- Barre supérieure Début -->
 <div class="container-fluid bg-light p-0">
     <div class="row gx-0 d-none d-lg-flex">
         <div class="col-lg-7 px-5 text-start">
@@ -119,7 +62,7 @@
             </div>
             <div class="h-100 d-inline-flex align-items-center border-end px-3">
                 <small class="fa fa-map-marker-alt me-2"></small>
-                <small>Montreal, QC</small>
+                <small>Montréal, QC</small>
             </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
@@ -132,263 +75,273 @@
         </div>
     </div>
 </div>
-<!-- Topbar End -->
+<!-- Barre supérieure Fin -->
 
+<!-- Barre de navigation Début -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+         <img src="img/castells-removebg-preview.png" alt="Logo Castells" height="100" style="margin-left: -25px;">
+         <!-- <h1>Castells INC.</h1> -->
+    </a>
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-             <img src="img/castells-removebg-preview.png" alt="Castells Logo" height="100" style="margin-left: -25px;">
-             <!-- <h1>Castells INC.</h1> -->
-        </a>
-
-        <button style="margin-right: 15px;" type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-3 py-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About Us</a>
-                <a href="service.html" class="nav-item nav-link">Our Services</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-lg-10">
-                                    <h5 class="text-light text-uppercase mb-3 animated slideInDown">Welcome to Castells inc.</h5>
-                                    <h1 class="display-2 text-light mb-3 animated slideInDown">A Construction & Renovation Company</h1>
-                                    <ol class="breadcrumb mb-4 pb-2">
-                                        <li class="breadcrumb-item fs-5 text-light">Commercial</li>
-                                        <li class="breadcrumb-item fs-5 text-light">Residential</li>
-                                        <li class="breadcrumb-item fs-5 text-light">Industrial</li>
-                                    </ol>
-                                    <a href="" class="btn btn-primary py-3 px-5">More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-lg-10">
-                                    <h5 class="text-light text-uppercase mb-3 animated slideInDown">Welcome to Castells inc.</h5>
-                                    <h1 class="display-2 text-light mb-3 animated slideInDown">Professional Tiling & Painting Services</h1>
-                                    <ol class="breadcrumb mb-4 pb-2">
-                                        <li class="breadcrumb-item fs-5 text-light">Commercial</li>
-                                        <li class="breadcrumb-item fs-5 text-light">Residential</li>
-                                        <li class="breadcrumb-item fs-5 text-light">Industrial</li>
-                                    </ol>
-                                    <a href="" class="btn btn-primary py-3 px-5">More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <button style="margin-right: 15px;" type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-3 py-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Accueil</a>
+            <a href="about.html" class="nav-item nav-link">À propos</a>
+            <a href="service.html" class="nav-item nav-link">Nos services</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <div class="dropdown-menu bg-light m-0">
+                    <a href="feature.html" class="dropdown-item">Fonctionnalités</a>
+                    <a href="appointment.html" class="dropdown-item">Rendez-vous</a>
+                    <a href="team.html" class="dropdown-item">Notre équipe</a>
+                    <a href="testimonial.html" class="dropdown-item">Témoignages</a>
+                    <a href="404.html" class="dropdown-item">Page 404</a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <a href="contact.html" class="nav-item nav-link">Contactez-nous</a>
         </div>
     </div>
-    <!-- Carousel End -->
+</nav>
+<!-- Barre de navigation Fin -->
+
+<!-- Carrousel Début -->
+<div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <h5 class="text-light text-uppercase mb-3 animated slideInDown">Bienvenue chez Castells inc.</h5>
+                                <h1 class="display-2 text-light mb-3 animated slideInDown">Entreprise de construction et rénovation</h1>
+                                <ol class="breadcrumb mb-4 pb-2">
+                                    <li class="breadcrumb-item fs-5 text-light">Commercial</li>
+                                    <li class="breadcrumb-item fs-5 text-light">Résidentiel</li>
+                                    <li class="breadcrumb-item fs-5 text-light">Industriel</li>
+                                </ol>
+                                <a href="" class="btn btn-primary py-3 px-5">Plus de détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <h5 class="text-light text-uppercase mb-3 animated slideInDown">Bienvenue chez Castells inc.</h5>
+                                <h1 class="display-2 text-light mb-3 animated slideInDown">Services professionnels de carrelage et peinture</h1>
+                                <ol class="breadcrumb mb-4 pb-2">
+                                    <li class="breadcrumb-item fs-5 text-light">Commercial</li>
+                                    <li class="breadcrumb-item fs-5 text-light">Résidentiel</li>
+                                    <li class="breadcrumb-item fs-5 text-light">Industriel</li>
+                                </ol>
+                                <a href="" class="btn btn-primary py-3 px-5">Plus de détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
+    </div>
+</div>
+<!-- Carrousel Fin -->
 
 
- <!-- About Start -->
+
+<!-- À propos Début -->
 <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5">
-            <!-- Image Section -->
+            <!-- Section Image -->
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="ratio ratio-4x3 d-lg-none">
-        <img src="img/castells.jpg" class="img-fluid" alt="Castells Inc. team at work" style="object-fit: cover;">
-    </div>
-    <div class="d-none d-lg-block overflow-hidden ps-lg-5 h-100">
-        <img class="img-fluid w-100 h-100" src="img/castells.jpg" alt="Castells Inc. team at work" style="object-fit: cover;">
-    </div>
-</div>
+                <div class="ratio ratio-4x3 d-lg-none">
+                    <img src="img/castells.jpg" class="img-fluid" alt="Équipe de Castells Inc. au travail" style="object-fit: cover;">
+                </div>
+                <div class="d-none d-lg-block overflow-hidden ps-lg-5 h-100">
+                    <img class="img-fluid w-100 h-100" src="img/castells.jpg" alt="Équipe de Castells Inc. au travail" style="object-fit: cover;">
+                </div>
+            </div>
 
-
-            <!-- Text Content -->
+            <!-- Contenu Texte -->
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="h-100">
                     <div class="border-start border-5 border-primary ps-4 mb-5">
-                        <h6 class="text-body text-uppercase mb-2">About Us</h6>
-                        <h1 class="display-6 mb-0">Expertly Crafted Spaces for Modern Living</h1>
+                        <h6 class="text-body text-uppercase mb-2">À propos de nous</h6>
+                        <h1 class="display-6 mb-0">Espaces expertement conçus pour une vie moderne</h1>
                     </div>
-                    <p>At Castells Inc., we bring over 25 years of dedicated experience in designing and building luxurious residential and commercial spaces across Montreal. Our passion for detail and commitment to quality set us apart in the world of custom construction.</p>
-                    <p class="mb-4">From concept to completion, our certified professionals deliver projects that reflect your unique vision—whether it’s a sleek modern renovation, a full-scale architectural build, or timeless interior design.</p>
+                    <p>Chez Castells Inc., nous apportons plus de 25 ans d'expérience dédiée à la conception et à la construction d'espaces résidentiels et commerciaux luxueux à travers Montréal. Notre passion pour les détails et notre engagement envers la qualité nous distinguent dans le monde de la construction sur mesure.</p>
+                    <p class="mb-4">Du concept à la réalisation, nos professionnels certifiés livrent des projets qui reflètent votre vision unique - qu'il s'agisse d'une rénovation moderne élégante, d'une construction architecturale complète ou d'un design intérieur intemporel.</p>
 
                     <div class="border-top mt-4 pt-4">
                         <div class="row g-4">
                             <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.1s">
                                 <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                                <h6 class="mb-0">On-Time Delivery</h6>
+                                <h6 class="mb-0">Livraison à temps</h6>
                             </div>
                             <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.3s">
                                 <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                                <h6 class="mb-0">24/7 Support</h6>
+                                <h6 class="mb-0">Support 24/7</h6>
                             </div>
                             <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.5s">
                                 <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                                <h6 class="mb-0">Certified Experts</h6>
+                                <h6 class="mb-0">Experts certifiés</h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End Text -->
+            <!-- Fin Texte -->
         </div>
     </div>
 </div>
-<!-- About End -->
+<!-- À propos Fin -->
 
-
-   <!-- Facts Start -->
+<!-- Faits Début -->
 <div class="container-fluid my-5 p-0">
     <div class="row g-0">
-        <!-- Custom Construction -->
+        <!-- Construction sur mesure -->
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
             <div class="position-relative">
-                <img class="img-fluid w-100" src="img/fact-1.jpg" alt="Custom home construction Montreal">
+                <img class="img-fluid w-100" src="img/fact-1.jpg" alt="Construction de maison sur mesure Montréal">
                 <div class="facts-overlay">
                     <h1 class="display-1">01</h1>
-                    <h4 class="text-white mb-3">Custom Construction</h4>
-                    <p class="text-white">We specialize in building unique luxury homes tailored to your lifestyle and vision—crafted with precision and care.</p>
-                    <a class="text-white small" href="#custom-homes">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>
+                    <h4 class="text-white mb-3">Construction sur mesure</h4>
+                    <p class="text-white">Nous nous spécialisons dans la construction de maisons de luxe uniques adaptées à votre style de vie et à votre vision - réalisées avec précision et soin.</p>
+                    <a class="text-white small" href="#custom-homes">VOIR PLUS<i class="fa fa-arrow-right ms-3"></i></a>
                 </div>
             </div>
         </div>
 
-        <!-- Renovation & Remodeling -->
+        <!-- Rénovation & Réaménagement -->
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
             <div class="position-relative">
-                <img class="img-fluid w-100" src="img/fact-2.jpg" alt="Luxury renovation services Montreal">
+                <img class="img-fluid w-100" src="img/fact-2.jpg" alt="Services de rénovation de luxe Montréal">
                 <div class="facts-overlay">
                     <h1 class="display-1">02</h1>
-                    <h4 class="text-white mb-3">Renovation & Remodeling</h4>
-                    <p class="text-white">Transform your home with upscale renovations—from kitchens to entire living spaces—executed flawlessly.</p>
-                    <a class="text-white small" href="#renovation">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>
+                    <h4 class="text-white mb-3">Rénovation & Réaménagement</h4>
+                    <p class="text-white">Transformez votre maison avec des rénovations haut de gamme - des cuisines aux espaces de vie entiers - exécutées à la perfection.</p>
+                    <a class="text-white small" href="#renovation">VOIR PLUS<i class="fa fa-arrow-right ms-3"></i></a>
                 </div>
             </div>
         </div>
 
-        <!-- Architectural Design -->
+        <!-- Design architectural -->
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
             <div class="position-relative">
-                <img class="img-fluid w-100" src="img/fact-3.jpg" alt="Architectural design services">
+                <img class="img-fluid w-100" src="img/fact-3.jpg" alt="Services de design architectural">
                 <div class="facts-overlay">
                     <h1 class="display-1">03</h1>
-                    <h4 class="text-white mb-3">Architectural Design</h4>
-                    <p class="text-white">We offer custom architectural planning, blending function and form to create spaces that inspire.</p>
-                    <a class="text-white small" href="#architecture">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>
+                    <h4 class="text-white mb-3">Design architectural</h4>
+                    <p class="text-white">Nous offrons une planification architecturale sur mesure, alliant fonctionnalité et esthétique pour créer des espaces inspirants.</p>
+                    <a class="text-white small" href="#architecture">VOIR PLUS<i class="fa fa-arrow-right ms-3"></i></a>
                 </div>
             </div>
         </div>
 
-        <!-- Interior Design -->
+        <!-- Design d'intérieur -->
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.7s">
             <div class="position-relative">
-                <img class="img-fluid w-100" src="img/fact-4.jpg" alt="Montreal interior design service">
+                <img class="img-fluid w-100" src="img/fact-4.jpg" alt="Service de design d'intérieur Montréal">
                 <div class="facts-overlay">
                     <h1 class="display-1">04</h1>
-                    <h4 class="text-white mb-3">Interior Design</h4>
-                    <p class="text-white">Elegant, timeless interiors designed with your personal aesthetic in mind—beautiful inside and out.</p>
-                    <a class="text-white small" href="#interior">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>
+                    <h4 class="text-white mb-3">Design d'intérieur</h4>
+                    <p class="text-white">Intérieurs élégants et intemporels conçus avec votre esthétique personnelle en tête - beaux à l'intérieur comme à l'extérieur.</p>
+                    <a class="text-white small" href="#interior">VOIR PLUS<i class="fa fa-arrow-right ms-3"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Facts End -->
+<!-- Faits Fin -->
+
+<!-- Section d'appel à l'action - Projets réalisés -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-3 fw-bold display-5 text-dark">Découvrez Nos Réalisations 🔨</h2>
+    <p class="mb-4 text-muted fs-5">
+      Explorez de véritables projets de rénovation que nous avons menés à bien — de la démolition à la finition soignée.
+      Découvrez les transformations, les étapes de progression et les moments forts sur chantier qui témoignent de notre qualité.
+    </p>
+    <a href="work.html" class="btn btn-primary btn-lg px-4">
+      Voir Nos Projets
+    </a>
+  </div>
+</section>
+<!-- Fin de la section d'appel à l'action - Projets réalisés -->
 
 
-
- <!-- Features Start -->
+<!-- Caractéristiques Début -->
 <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="border-start border-5 border-primary ps-4 mb-5">
-                    <h6 class="text-body text-uppercase mb-2">Why Choose Castells Inc.</h6>
-                    <h1 class="display-6 mb-0">Luxury Craftsmanship. Thoughtful Design.</h1>
+                    <h6 class="text-body text-uppercase mb-2">Pourquoi choisir Castells Inc.</h6>
+                    <h1 class="display-6 mb-0">Savoir-faire de luxe. Design réfléchi.</h1>
                 </div>
                 <p class="mb-5">
-                    At Castells Inc., we specialize in creating exceptional custom homes and delivering premium renovations
-                    throughout Montreal, the West Island, Laval, and surrounding areas. Our team combines decades of expertise
-                    with a passion for timeless design, turning your vision into reality with elegance and precision.
+                    Chez Castells Inc., nous nous spécialisons dans la création de maisons personnalisées exceptionnelles et la réalisation de rénovations haut de gamme
+                    à travers Montréal, l'Ouest-de-l'Île, Laval et les environs. Notre équipe combine des décennies d'expertise
+                    avec une passion pour le design intemporel, transformant votre vision en réalité avec élégance et précision.
                 </p>
                 <div class="row gy-5 gx-4">
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                            <h6 class="mb-0">Custom Dream Homes</h6>
+                            <h6 class="mb-0">Maisons de rêve sur mesure</h6>
                         </div>
-                        <span>Tailored architecture built exactly as you envision, with no compromise on detail or quality.</span>
+                        <span>Architecture taillée exactement comme vous l'imaginez, sans compromis sur les détails ou la qualité.</span>
                     </div>
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                            <h6 class="mb-0">High-End Renovations</h6>
+                            <h6 class="mb-0">Rénovations haut de gamme</h6>
                         </div>
-                        <span>From kitchens to full-home makeovers, we bring modern elegance to every project.</span>
+                        <span>Des cuisines aux transformations complètes, nous apportons une élégance moderne à chaque projet.</span>
                     </div>
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                            <h6 class="mb-0">Architectural Design</h6>
+                            <h6 class="mb-0">Design architectural</h6>
                         </div>
-                        <span>Beautiful, functional spaces planned to match your lifestyle and personal taste.</span>
+                        <span>Espaces beaux et fonctionnels conçus pour correspondre à votre style de vie et à vos goûts personnels.</span>
                     </div>
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                            <h6 class="mb-0">Quality Guaranteed</h6>
+                            <h6 class="mb-0">Qualité garantie</h6>
                         </div>
-                        <span>We use only the finest materials and skilled craftsmanship to ensure lasting results.</span>
+                        <span>Nous n'utilisons que les meilleurs matériaux et un savoir-faire qualifié pour garantir des résultats durables.</span>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/taylor.jpg" alt="Luxury renovation Montreal" style="margin-left: 15px;">
+                    <img class="position-absolute w-100 h-100" src="img/taylor.jpg" alt="Rénovation de luxe Montréal" style="margin-left: 15px;">
                     <div class="position-absolute top-0 start-0 bg-white pe-3 pb-3" style="width: 150px; height: 150px;">
                         <div class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3">
                             <h1 class="text-white">25</h1>
-                            <h2 class="text-white">Years</h2>
-                            <h5 class="text-white mb-0">Family Business</h5>
+                            <h2 class="text-white">Ans</h2>
+                            <h5 class="text-white mb-0">Entreprise familiale</h5>
                         </div>
                     </div>
                 </div>
@@ -396,22 +349,20 @@
         </div>
     </div>
 </div>
-<!-- Features End -->
+<!-- Caractéristiques Fin -->
 
-
-
-    <!-- Service Start -->
-  <div class="container-xxl py-5">
+<!-- Services Début -->
+<div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5 align-items-end mb-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="border-start border-5 border-primary ps-4">
-                    <h6 class="text-body text-uppercase mb-2">About Castells Inc.</h6>
-                    <h1 class="display-6 mb-0">Montreal's Trusted Luxury Home Builders & Renovation Experts</h1>
+                    <h6 class="text-body text-uppercase mb-2">À propos de Castells Inc.</h6>
+                    <h1 class="display-6 mb-0">Constructeurs de maisons de luxe et experts en rénovation de confiance à Montréal</h1>
                 </div>
             </div>
             <div class="col-lg-6 text-lg-end wow fadeInUp" data-wow-delay="0.3s">
-                <a class="btn btn-primary py-3 px-5" href="#">Let’s Build Together</a>
+                <a class="btn btn-primary py-3 px-5" href="#">Construisons ensemble</a>
             </div>
         </div>
         <div class="row g-4 justify-content-center">
@@ -419,9 +370,9 @@
                 <div class="service-item bg-light overflow-hidden h-100">
                     <img class="img-fluid" src="img/service-1.jpg" alt="">
                     <div class="service-text position-relative text-center h-100 p-4">
-                        <h5 class="mb-3">Custom-Built Luxury Homes</h5>
-                        <p>Designed to reflect your lifestyle, our homes are tailored with precision and elegance.</p>
-                        <a class="small" href="#">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>
+                        <h5 class="mb-3">Maisons de luxe sur mesure</h5>
+                        <p>Conçues pour refléter votre style de vie, nos maisons sont taillées avec précision et élégance.</p>
+                        <a class="small" href="#">VOIR PLUS<i class="fa fa-arrow-right ms-3"></i></a>
                     </div>
                 </div>
             </div>
@@ -429,9 +380,9 @@
                 <div class="service-item bg-light overflow-hidden h-100">
                     <img class="img-fluid" src="img/service-2.jpg" alt="">
                     <div class="service-text position-relative text-center h-100 p-4">
-                        <h5 class="mb-3">High-End Renovations</h5>
-                        <p>Specializing in kitchens, bathrooms, and whole-home upgrades with luxurious finishes.</p>
-                        <a class="small" href="#">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>
+                        <h5 class="mb-3">Rénovations haut de gamme</h5>
+                        <p>Spécialisés dans les cuisines, salles de bains et rénovations complètes avec des finitions luxueuses.</p>
+                        <a class="small" href="#">VOIR PLUS<i class="fa fa-arrow-right ms-3"></i></a>
                     </div>
                 </div>
             </div>
@@ -439,9 +390,9 @@
                 <div class="service-item bg-light overflow-hidden h-100">
                     <img class="img-fluid" src="img/service-3.jpg" alt="">
                     <div class="service-text position-relative text-center h-100 p-4">
-                        <h5 class="mb-3">Timeless Craftsmanship</h5>
-                        <p>We build with quality that endures, delivering homes that last for generations.</p>
-                        <a class="small" href="#">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>
+                        <h5 class="mb-3">Savoir-faire intemporel</h5>
+                        <p>Nous construisons avec une qualité durable, livrant des maisons qui durent pour les générations.</p>
+                        <a class="small" href="#">VOIR PLUS<i class="fa fa-arrow-right ms-3"></i></a>
                     </div>
                 </div>
             </div>
@@ -449,9 +400,9 @@
                 <div class="service-item bg-light overflow-hidden h-100">
                     <img class="img-fluid" src="img/service-4.jpg" alt="">
                     <div class="service-text position-relative text-center h-100 p-4">
-                        <h5 class="mb-3">Stress-Free Process</h5>
-                        <p>From concept to completion, we manage every detail with precision and care.</p>
-                        <a class="small" href="#">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>
+                        <h5 class="mb-3">Processus sans stress</h5>
+                        <p>Du concept à la réalisation, nous gérons chaque détail avec précision et soin.</p>
+                        <a class="small" href="#">VOIR PLUS<i class="fa fa-arrow-right ms-3"></i></a>
                     </div>
                 </div>
             </div>
@@ -459,9 +410,9 @@
                 <div class="service-item bg-light overflow-hidden h-100">
                     <img class="img-fluid" src="img/service-5.jpg" alt="">
                     <div class="service-text position-relative text-center h-100 p-4">
-                        <h5 class="mb-3">Family-Owned Excellence</h5>
-                        <p>Rooted in Montreal, our family business is dedicated to exceptional service and integrity.</p>
-                        <a class="small" href="#">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>
+                        <h5 class="mb-3">Excellence familiale</h5>
+                        <p>Enracinés à Montréal, notre entreprise familiale est dédiée à un service exceptionnel et à l'intégrité.</p>
+                        <a class="small" href="#">VOIR PLUS<i class="fa fa-arrow-right ms-3"></i></a>
                     </div>
                 </div>
             </div>
@@ -469,9 +420,9 @@
                 <div class="service-item bg-light overflow-hidden h-100">
                     <img class="img-fluid" src="img/service-6.jpg" alt="">
                     <div class="service-text position-relative text-center h-100 p-4">
-                        <h5 class="mb-3">Let’s Build Something Extraordinary</h5>
-                        <p>We partner with you to create homes that inspire and endure.</p>
-                        <a class="small" href="#">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>
+                        <h5 class="mb-3">Construisons quelque chose d'extraordinaire</h5>
+                        <p>Nous collaborons avec vous pour créer des maisons qui inspirent et perdurent.</p>
+                        <a class="small" href="#">VOIR PLUS<i class="fa fa-arrow-right ms-3"></i></a>
                     </div>
                 </div>
             </div>
@@ -479,159 +430,56 @@
     </div>
 </div>
 
-<!-- Media Gallery Section Start -->
-<section class="container-fluid px-0 my-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="text-center mb-5">
-        <h2 class="text-uppercase text-primary">Our Work</h2>
-        <h1 class="display-6">Project Showcase</h1>
-        <p class="text-muted">Real projects captured by our clients</p>
-    </div>
-    
-    <!-- Filter Controls -->
-    <div class="container mb-4">
-        <div class="d-flex flex-wrap justify-content-center filter-controls">
-            <button class="btn btn-outline-primary mx-2 mb-2 active" data-filter="all">All Media</button>
-            <button class="btn btn-outline-primary mx-2 mb-2" data-filter="image">Images</button>
-            <button class="btn btn-outline-primary mx-2 mb-2" data-filter="video">Videos</button>
-            <!-- Add more filter categories if needed -->
-        </div>
-    </div>
-    
-    <!-- Masonry Grid Gallery -->
-    <div class="container-fluid px-lg-5">
-        <div class="row gallery-grid">
-            <!-- Images will have data-type="image" -->
-            <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-type="image">
-                <div class="media-card rounded-3 overflow-hidden shadow-lg">
-                    <img src="img/work1.jpg" class="img-fluid w-100" alt="Project Image 1" loading="lazy">
-                    <div class="media-overlay d-flex align-items-center justify-content-center">
-                        <button class="btn btn-light btn-lg rounded-circle p-3 view-media" data-src="img/work1.jpg" data-type="image">
-                            <i class="fas fa-expand"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Videos will have data-type="video" -->
-            <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-type="video">
-                <div class="media-card rounded-3 overflow-hidden shadow-lg">
-                    <div class="ratio ratio-16x9">
-                        <video class="img-fluid" poster="img/video-thumb1.jpg" muted loop>
-                            <source src="vid/project1.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="media-overlay d-flex align-items-center justify-content-center">
-                        <button class="btn btn-light btn-lg rounded-circle p-3 view-media" data-src="vid/project1.mp4" data-type="video" data-poster="img/video-thumb1.jpg">
-                            <i class="fas fa-play"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Add more items as needed -->
-            <!-- Example items -->
-            <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-type="image">
-                <div class="media-card rounded-3 overflow-hidden shadow-lg">
-                    <img src="img/work2.jpg" class="img-fluid w-100" alt="Project Image 2" loading="lazy">
-                    <div class="media-overlay d-flex align-items-center justify-content-center">
-                        <button class="btn btn-light btn-lg rounded-circle p-3 view-media" data-src="img/work2.jpg" data-type="image">
-                            <i class="fas fa-expand"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-type="video">
-                <div class="media-card rounded-3 overflow-hidden shadow-lg">
-                    <div class="ratio ratio-16x9">
-                        <video class="img-fluid" poster="img/video-thumb2.jpg" muted loop>
-                            <source src="vid/project2.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="media-overlay d-flex align-items-center justify-content-center">
-                        <button class="btn btn-light btn-lg rounded-circle p-3 view-media" data-src="vid/project2.mp4" data-type="video" data-poster="img/video-thumb2.jpg">
-                            <i class="fas fa-play"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- View More Button -->
-    <div class="text-center mt-4">
-        <button class="btn btn-primary px-4 py-2 load-more">Load More Projects</button>
-    </div>
-</section>
-
-<!-- Lightbox Modal -->
-<div class="modal fade" id="mediaModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content bg-transparent border-0">
-            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-index-1" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body p-0">
-                <div class="ratio ratio-16x9">
-                    <img id="modalImage" src="" class="img-fluid d-none" alt="">
-                    <video id="modalVideo" controls class="w-100 d-none">
-                        <source src="" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Media Gallery Section End -->
 
 
 
-
- <!-- Contact Start -->
+<!-- Contact Début -->
 <div class="container-fluid appointment my-5 py-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #1f1f1f;">
     <div class="container py-5">
         <div class="row g-5">
-            <!-- Contact Info -->
+            <!-- Informations de contact -->
             <div class="col-lg-5 col-md-6 wow fadeIn" data-wow-delay="0.3s">
                 <div class="border-start border-5 border-primary ps-4 mb-4">
-                    <h6 class="text-white text-uppercase mb-2">Contact Castells Inc.</h6>
-                    <h1 class="display-6 text-white mb-0">Let’s Bring Your Dream Home to Life</h1>
+                    <h6 class="text-white text-uppercase mb-2">Contactez Castells Inc.</h6>
+                    <h1 class="display-6 text-white mb-0">Donnez vie à la maison de vos rêves</h1>
                 </div>
                 <p class="text-white mb-3">
-                    Ready to start your luxury renovation or custom home project? Reach out to our Montreal team for:
+                    Prêt à commencer votre projet de rénovation luxueuse ou de maison personnalisée ? Contactez notre équipe à Montréal pour :
                 </p>
-                 <div class="text-white">
-                    <p>✔️ Free Consultations – Discuss your vision with our experts</p>
-                    <p>✔️Transparent Quotes – No hidden costs, just honest pricing</p>
-                    <p>✔️ Personalized Service – From first sketch to final finish</p>
+                <div class="text-white">
+                    <p>✔️ Consultations gratuites – Discutez de votre vision avec nos experts</p>
+                    <p>✔️ Devis transparents – Pas de coûts cachés, juste des prix honnêtes</p>
+                    <p>✔️ Service personnalisé – De la première esquisse à la finition finale</p>
                 </div>
                 <div class="text-white">
-                    <p>We serve Montreal, West Island, Laval, and surrounding areas.</p>
+                    <p>Nous desservons Montréal, l'Ouest-de-l'Île, Laval et les environs.</p>
                 </div>
             </div>
 
-            <!-- Contact Form -->
+            <!-- Formulaire de contact -->
             <div class="col-lg-7 col-md-6 wow fadeIn" data-wow-delay="0.5s">
                 <form>
                     <div class="row g-3">
                         <div class="col-12">
                             <div class="form-floating">
-                                <input type="email" class="form-control bg-dark border-0 text-white" id="email" placeholder="Your Email">
-                                <label for="email">Your Email Address</label>
+                                <input type="email" class="form-control bg-dark border-0 text-white" id="email" placeholder="Votre Email">
+                                <label for="email">Votre adresse email</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <input type="text" class="form-control bg-dark border-0 text-white" id="subject" placeholder="Subject">
-                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control bg-dark border-0 text-white" id="subject" placeholder="Sujet">
+                                <label for="subject">Sujet</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control bg-dark border-0 text-white" placeholder="Leave a message here" id="message" style="height: 120px"></textarea>
-                                <label for="message">Your Message</label>
+                                <textarea class="form-control bg-dark border-0 text-white" placeholder="Laissez un message ici" id="message" style="height: 120px"></textarea>
+                                <label for="message">Votre message</label>
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Get a Free Estimate</button>
+                            <button class="btn btn-primary w-100 py-3" type="submit">Obtenir un devis gratuit</button>
                         </div>
                     </div>
                 </form>
@@ -639,24 +487,24 @@
         </div>
     </div>
 </div>
-<!-- Contact End -->
+<!-- Contact Fin -->
 
 
 
 
 
-<!-- Testimonial Start -->
+<!-- Témoignages Début -->
 <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5">
-            <!-- Left Content -->
+            <!-- Contenu de gauche -->
             <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="border-start border-5 border-primary ps-4 mb-5">
-                    <h6 class="text-body text-uppercase mb-2">Testimonials</h6>
-                    <h1 class="display-6 mb-0">Hear From Our Satisfied Clients</h1>
+                    <h6 class="text-body text-uppercase mb-2">Témoignages</h6>
+                    <h1 class="display-6 mb-0">Écoutez nos clients satisfaits</h1>
                 </div>
                 <p class="mb-4">
-                    At Castells Inc., client satisfaction is our highest priority. From custom builds to full-scale renovations, we turn your vision into reality—on time and on budget.
+                    Chez Castells Inc., la satisfaction client est notre priorité absolue. Des constructions sur mesure aux rénovations complètes, nous transformons votre vision en réalité – dans les délais et le budget.
                 </p>
                 <div class="row g-4">
                     <div class="col-sm-6">
@@ -664,82 +512,82 @@
                             <i class="fa fa-users fa-2x text-primary flex-shrink-0"></i>
                             <h1 class="ms-3 mb-0">100+</h1>
                         </div>
-                        <h5 class="mb-0">Happy Clients</h5>
+                        <h5 class="mb-0">Clients heureux</h5>
                     </div>
                     <div class="col-sm-6">
                         <div class="d-flex align-items-center mb-2">
                             <i class="fa fa-check fa-2x text-primary flex-shrink-0"></i>
                             <h1 class="ms-3 mb-0">120+</h1>
                         </div>
-                        <h5 class="mb-0">Projects Completed</h5>
+                        <h5 class="mb-0">Projets réalisés</h5>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Carousel -->
+            <!-- Carrousel de droite -->
             <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="owl-carousel testimonial-carousel">
-                    <!-- Testimonial 1 -->
+                    <!-- Témoignage 1 -->
                     <div class="testimonial-item">
-                        <img class="img-fluid mb-4" src="img/testimonial-1.jpg" alt="Client Photo">
+                        <img class="img-fluid mb-4" src="img/testimonial-1.jpg" alt="Photo du client">
                         <p class="fs-5">
-                            “Castells Inc. transformed our outdated kitchen into a stunning, modern space. The team was professional, transparent, and the results exceeded our expectations.”
+                            "Castells Inc. a transformé notre cuisine vieillissante en un espace moderne et magnifique. L'équipe était professionnelle, transparente, et les résultats ont dépassé nos attentes."
                         </p>
                         <div class="bg-primary mb-3" style="width: 60px; height: 5px"></div>
                         <h5>Sarah T.</h5>
-                        <span>West Island Homeowner</span>
+                        <span>Propriétaire à l'Ouest-de-l'Île</span>
                     </div>
 
-                    <!-- Testimonial 2 -->
+                    <!-- Témoignage 2 -->
                     <div class="testimonial-item">
-                        <img class="img-fluid mb-4" src="img/testimonial-2.jpg" alt="Client Photo">
+                        <img class="img-fluid mb-4" src="img/testimonial-2.jpg" alt="Photo du client">
                         <p class="fs-5">
-                            “We trusted Castells Inc. with our custom home build, and they delivered on every detail. From design to finish, it was a smooth, enjoyable experience.”
+                            "Nous avons fait confiance à Castells Inc. pour la construction de notre maison sur mesure, et ils ont livré chaque détail. De la conception à la finition, ce fut une expérience fluide et agréable."
                         </p>
                         <div class="bg-primary mb-3" style="width: 60px; height: 5px"></div>
                         <h5>Marc D.</h5>
-                        <span>Client in Laval</span>
+                        <span>Client à Laval</span>
                     </div>
 
-                    <!-- Testimonial 3 -->
+                    <!-- Témoignage 3 -->
                     <div class="testimonial-item">
-                        <img class="img-fluid mb-4" src="img/testimonial-3.png" alt="Client Photo">
+                        <img class="img-fluid mb-4" src="img/testimonial-3.png" alt="Photo du client">
                         <p class="fs-5">
-                            “The Castells team handled our entire basement renovation with incredible attention to detail. Clean, organized, and incredibly respectful of our space.”
+                            "L'équipe de Castells a géré toute la rénovation de notre sous-sol avec une attention incroyable aux détails. Propre, organisé et très respectueux de notre espace."
                         </p>
                         <div class="bg-primary mb-3" style="width: 60px; height: 5px"></div>
                         <h5>Leila M.</h5>
-                        <span>Montreal Resident</span>
+                        <span>Résidente de Montréal</span>
                     </div>
 
-                    <!-- Testimonial 4 -->
+                    <!-- Témoignage 4 -->
                     <div class="testimonial-item">
-                        <img class="img-fluid mb-4" src="img/testimonial-4.jpg" alt="Client Photo">
+                        <img class="img-fluid mb-4" src="img/testimonial-4.jpg" alt="Photo du client">
                         <p class="fs-5">
-                            “Excellent craftsmanship and outstanding communication. Castells Inc. made our luxury bathroom renovation easy and beautiful.”
+                            "Un savoir-faire excellent et une communication exceptionnelle. Castells Inc. a rendu notre rénovation de salle de bain luxueuse facile et magnifique."
                         </p>
                         <div class="bg-primary mb-3" style="width: 60px; height: 5px"></div>
                         <h5>James R.</h5>
-                        <span>Client from NDG</span>
+                        <span>Client de NDG</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Testimonial End -->
+<!-- Témoignages Fin -->
 
 
 
 
-    <!-- Footer Start -->
+<!-- Pied de page Début -->
 <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
-            <!-- Company Info -->
+            <!-- Informations sur l'entreprise -->
             <div class="col-lg-3 col-md-6 cas">
                 <h1 class="text-white mb-4"><i class="fa fa-university text-primary me-3"></i>Castells Inc.</h1>
-                <p>Bringing your vision to life with expert craftsmanship and personalized service across Montreal and surrounding areas.</p>
+                <p>Donnez vie à votre vision avec un savoir-faire expert et un service personnalisé à Montréal et ses environs.</p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-square btn-outline-primary me-1" href="#"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-outline-primary me-1" href="#"><i class="fab fa-instagram"></i></a>
@@ -748,31 +596,31 @@
                 </div>
             </div>
 
-            <!-- Contact Info -->
+            <!-- Coordonnées -->
             <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Contact Us</h4>
-                <p><i class="fa fa-map-marker-alt me-3"></i>Montreal, QC</p>
+                <h4 class="text-light mb-4">Contactez-nous</h4>
+                <p><i class="fa fa-map-marker-alt me-3"></i>Montréal, QC</p>
                 <p><i class="fa fa-phone-alt me-3"></i>(438) 408-1100</p>
                 <p><i class="fa fa-envelope me-3"></i>taylorcastells@gmail.com</p>
             </div>
 
-            <!-- Quick Links -->
+            <!-- Liens rapides -->
             <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Quick Links</h4>
-                <a class="btn btn-link" href="#">About Us</a>
-                <a class="btn btn-link" href="#">Contact Us</a>
-                <a class="btn btn-link" href="#">Our Services</a>
-                <a class="btn btn-link" href="#">Privacy Policy</a>
-                <a class="btn btn-link" href="#">FAQs</a>
+                <h4 class="text-light mb-4">Liens rapides</h4>
+                <a class="btn btn-link" href="#">À propos</a>
+                <a class="btn btn-link" href="#">Contact</a>
+                <a class="btn btn-link" href="#">Nos services</a>
+                <a class="btn btn-link" href="#">Politique de confidentialité</a>
+                <a class="btn btn-link" href="#">FAQ</a>
             </div>
 
             <!-- Newsletter -->
             <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Get a Consultation</h4>
-                <p>Sign up and one of our renovation experts will contact you to discuss your project.</p>
+                <h4 class="text-light mb-4">Obtenez une consultation</h4>
+                <p>Inscrivez-vous et un de nos experts en rénovation vous contactera pour discuter de votre projet.</p>
                 <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email">
-                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Send</button>
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email" placeholder="Votre email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Envoyer</button>
                 </div>
             </div>
         </div>
@@ -783,16 +631,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Castells Inc.</a>, All Rights Reserved.
+                    &copy; <a href="#">Castells Inc.</a>, Tous droits réservés.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    Designed by <a href="#">Mohamed Moez Challouf</a>
+                    Conçu par <a href="#">Mohamed Moez Challouf</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Footer End -->
+<!-- Pied de page Fin -->
 
 
 
@@ -811,76 +659,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-<script>
-$(document).ready(function() {
-    // Initialize filter
-    $('.filter-controls button').click(function() {
-        $('.filter-controls button').removeClass('active');
-        $(this).addClass('active');
-        
-        const filter = $(this).data('filter');
-        if (filter === 'all') {
-            $('.gallery-item').show();
-        } else {
-            $('.gallery-item').hide();
-            $(`.gallery-item[data-type="${filter}"]`).show();
-        }
-    });
-    
-    // Initialize media viewer
-    $('.view-media').click(function() {
-        const mediaType = $(this).data('type');
-        const mediaSrc = $(this).data('src');
-        
-        if (mediaType === 'image') {
-            $('#modalImage').removeClass('d-none').attr('src', mediaSrc);
-            $('#modalVideo').addClass('d-none')[0].pause();
-        } else {
-            const poster = $(this).data('poster');
-            $('#modalVideo').removeClass('d-none')
-                .find('source').attr('src', mediaSrc);
-            $('#modalVideo')[0].load();
-            $('#modalImage').addClass('d-none');
-        }
-        
-        $('#mediaModal').modal('show');
-    });
-    
-    // Close modal handler
-    $('#mediaModal').on('hidden.bs.modal', function () {
-        $('#modalVideo')[0].pause();
-    });
-    
-    // Load more functionality
-    let currentPage = 1;
-    $('.load-more').click(function() {
-        currentPage++;
-        // Here you would typically make an AJAX call to load more items
-        // For demo, we'll just clone existing items
-        if (currentPage <= 2) { // Prevent infinite cloning
-            const $items = $('.gallery-item').clone();
-            $('.gallery-grid').append($items);
-        } else {
-            $(this).text('No more projects').prop('disabled', true);
-        }
-    });
-    
-    // Auto-play videos on hover
-    $('.media-card').hover(
-        function() {
-            $(this).find('video').each(function() {
-                this.play();
-            });
-        },
-        function() {
-            $(this).find('video').each(function() {
-                this.pause();
-                this.currentTime = 0;
-            });
-        }
-    );
-});
-</script>
+
 
 </body>
 
